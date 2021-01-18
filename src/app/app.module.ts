@@ -1,20 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { AppRoutingModule } from './app-routing';
+
 import { AppComponent } from './app.component';
-import { UserComponent } from './page/user/user.component';
-import { RoleComponent } from './page/role/role.component';
-import { AppRoutingModule } from './app-routing.module';
-import { Page404Component } from './page/page404/page404.component';
+import { LoginComponent } from './layout/login/login.component';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
+import { Page404Component } from './page/page404/page404.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent,
-    RoleComponent,
-    Page404Component,
+    LoginComponent,
     DashboardComponent,
+    Page404Component,
   ],
   imports: [
     BrowserModule,
